@@ -48,9 +48,9 @@ class Contenedor{
     }
     deleteById(id){
         let product = this.getProductById(id)
-        let result = this.productos.filter(object => object.id !== id)
-        console.log(product)
-        return (result);
+        console.log({eliminado: product})
+        return this.productos = this.productos.filter(object => object.id !== id)
+        
     }
 }
 
